@@ -1,0 +1,2684 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;   
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #92c2f1;
+    display: flex;
+    /* background: #000; */
+    /* min-height: 100vh; */
+    /* align-items: center; */
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6A3puzRG_rePm5C-0BYrGdLsR53RiWMjK4g&usqp=CAU");
+    /* background-image: url("doctor-5080337_1280.png"); */
+}
+
+#navlist {
+    /* margin-top: 50px; */
+    width: 100%;
+    padding: 15px;
+    font-size: 2rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+}
+
+.navcontainer {
+    /* margin-top: 30px; */
+    width: 100vw;
+    min-height: 80px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 39, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* #navlist a{
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+} */
+
+#navtext {
+    margin-top: 80px;
+    font-size: 4.5rem;
+    color: white;
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#navtext:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px #8338ec;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+}
+/* #navtext:nth-child(2){
+    color: #c19bf5;
+    animation: animate 4s ease-in-out;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        clip-path: polygon(
+            0% 45%,
+            16% 44%,
+            33% 50%,
+            54% 60%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+    }
+
+    50% {
+        clip-path: polygon(
+            0% 60%,
+            15% 65%,
+            34% 66%,
+            51% 62%,
+            67% 70%,
+            84% 45%
+        );
+    }
+} */
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.navitems {
+    display: flex;  
+    gap: 40px;
+    
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 35px;
+    overflow-x: none;
+}
+
+h2, p{
+    color: black;
+}
+
+.Andaman_and_Nicobar {
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Andaman_and_Nicobar:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+
+.Andaman_and_Nicobar:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Andaman_and_Nicobar:hover:before{
+    opacity: 1;
+}
+
+.Andaman_and_Nicobar img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Andaman_and_Nicobar .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Andaman_and_Nicobar:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Andaman_and_Nicobar .info h2{
+    margin: 0;
+}
+
+
+.Andaman_and_Nicobar .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: black;
+}
+
+.btn {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5,
+    -6px -6px 12px #ffffff;
+
+}
+
+.btn::before{
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    width: 9em;
+}
+
+.Andhra_Pradesh {
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.Andhra_Pradesh:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+
+.Andhra_Pradesh:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Andhra_Pradesh:hover:before{
+    opacity: 1;
+}
+
+.Andhra_Pradesh img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Andhra_Pradesh .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Andhra_Pradesh:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Andhra_Pradesh .info h1{
+    margin: 0;
+}
+
+.Andhra_Pradesh .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+/* a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: black;
+} */
+
+.Arunachal_Pradesh {
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Arunachal_Pradesh:hover {
+    /* transform: scale(1.1); */
+transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+
+.Arunachal_Pradesh:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Arunachal_Pradesh:hover:before{
+    opacity: 1;
+}
+
+.Arunachal_Pradesh img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Arunachal_Pradesh .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Arunachal_Pradesh:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Arunachal_Pradesh .info h1{
+    margin: 0;
+}
+
+.Arunachal_Pradesh .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Assam {
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Assam:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+
+.Assam:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Assam:hover:before{
+    opacity: 1;
+}
+
+.Assam img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Assam .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Assam:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Assam .info h1{
+    margin: 0;
+}
+
+.Assam .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Bihar{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Bihar:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Bihar:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Bihar:hover:before{
+    opacity: 1;
+}
+
+.Bihar img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Bihar .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Bihar:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Bihar .info h1{
+    margin: 0;
+}
+
+.Bihar .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Chandigarh{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Chandigarh:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Chandigarh:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Chandigarh:hover:before{
+    opacity: 1;
+}
+
+.Chandigarh img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Chandigarh .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Chandigarh:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Chandigarh .info h1{
+    margin: 0;
+}
+
+.Chandigarh .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Chhattisgarh{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Chhattisgarh:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Chhattisgarh:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Chhattisgarh:hover:before{
+    opacity: 1;
+}
+
+.Chhattisgarh img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Chhattisgarh .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Chhattisgarh:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Chhattisgarh .info h1{
+    margin: 0;
+}
+
+.Chhattisgarh .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Delhi{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Delhi:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Delhi:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Delhi:hover:before{
+    opacity: 1;
+}
+
+.Delhi img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Delhi .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Delhi:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Delhi .info h1{
+    margin: 0;
+}
+
+.Delhi .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Goa{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.Goa:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+
+.Goa:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Goa:hover:before{
+    opacity: 1;
+}
+
+.Goa img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Goa .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Goa:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Goa .info h1{
+    margin: 0;
+}
+
+.Goa .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.Goa:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Goa .info h1{
+    margin: 0;
+}
+
+.Goa .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+} 
+
+.Gujarat{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Gujarat:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Gujarat:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Gujarat:hover:before{
+    opacity: 1;
+}
+
+.Gujarat img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Gujarat .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Gujarat:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Gujarat .info h1{
+    margin: 0;
+}
+
+.Gujarat .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Haryana{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Haryana:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Haryana:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Haryana:hover:before{
+    opacity: 1;
+}
+
+.Haryana img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Haryana .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Haryana:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Haryana .info h1{
+    margin: 0;
+}
+
+.Haryana .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Himachal_Pradesh{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Himachal_Pradesh:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Himachal_Pradesh:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Himachal_Pradesh:hover:before{
+    opacity: 1;
+}
+
+.Himachal_Pradesh img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Himachal_Pradesh .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Himachal_Pradesh:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Himachal_Pradesh .info h1{
+    margin: 0;
+}
+
+.Himachal_Pradesh .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+
+
+.Jammu_and_Kashmir{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Jammu_and_Kashmir:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Jammu_and_Kashmir:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Jammu_and_Kashmir:hover:before{
+    opacity: 1;
+}
+
+.Jammu_and_Kashmir img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Jammu_and_Kashmir .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Jammu_and_Kashmir:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Jammu_and_Kashmir .info h1{
+    margin: 0;
+}
+
+.Jammu_and_Kashmir .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Jharkhand{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Jharkhand:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Jharkhand:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Jharkhand:hover:before{
+    opacity: 1;
+}
+
+.Jharkhand img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Jharkhand .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Jharkhand:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Jharkhand .info h1{
+    margin: 0;
+}
+
+.Jharkhand .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Karnataka{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Karnataka:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Karnataka:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Karnataka:hover:before{
+    opacity: 1;
+}
+
+.Karnataka img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Karnataka .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Karnataka:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Karnataka .info h1{
+    margin: 0;
+}
+
+.Karnataka .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Kerala{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Kerala:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+
+.Kerala:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Kerala:hover:before{
+    opacity: 1;
+}
+
+.Kerala img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Kerala .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Kerala:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Kerala .info h1{
+    margin: 0;
+}
+
+.Kerala .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Ladakh{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Ladakh:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Ladakh:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Ladakh:hover:before{
+    opacity: 1;
+}
+
+.Ladakh img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Ladakh .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Ladakh:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Ladakh .info h1{
+    margin: 0;
+}
+
+.Ladakh .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Lakshadweep{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Lakshadweep:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Lakshadweep:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Lakshadweep:hover:before{
+    opacity: 1;
+}
+
+.Lakshadweep img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Lakshadweep .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Lakshadweep:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Lakshadweep .info h1{
+    margin: 0;
+}
+
+.Lakshadweep .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Maharashtra{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Maharashtra:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Maharashtra:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Maharashtra:hover:before{
+    opacity: 1;
+}
+
+.Maharashtra img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Maharashtra .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Maharashtra:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Maharashtra .info h1{
+    margin: 0;
+}
+
+.Maharashtra .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Manipur{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Manipur:hover {
+    /* transform: scale(1.1); */
+transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Manipur:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Manipur:hover:before{
+    opacity: 1;
+}
+
+.Manipur img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Manipur .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Manipur:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Manipur .info h1{
+    margin: 0;
+}
+
+.Manipur .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Meghalaya{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Meghalaya:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Meghalaya:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Meghalaya:hover:before{
+    opacity: 1;
+}
+
+.Meghalaya img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Meghalaya .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Meghalaya:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Meghalaya .info h1{
+    margin: 0;
+}
+
+.Meghalaya .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Mizoram{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Mizoram:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Mizoram:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Mizoram:hover:before{
+    opacity: 1;
+}
+
+.Mizoram img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Mizoram .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Mizoram:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Mizoram .info h1{
+    margin: 0;
+}
+
+.Mizoram .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Madhya_Pradesh{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Madhya_Pradesh:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Madhya_Pradesh:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Madhya_Pradesh:hover:before{
+    opacity: 1;
+}
+
+.Madhya_Pradesh img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Madhya_Pradesh .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Madhya_Pradesh:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Madhya_Pradesh .info h1{
+    margin: 0;
+}
+
+.Madhya_Pradesh .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Nagaland{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Nagaland:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Nagaland:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Nagaland:hover:before{
+    opacity: 1;
+}
+
+.Nagaland img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Nagaland .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Nagaland:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Nagaland .info h1{
+    margin: 0;
+}
+
+.Nagaland .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+
+.Odisha{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Odisha:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+
+.Odisha:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Odisha:hover:before{
+    opacity: 1;
+}
+
+.Odisha img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Odisha .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Odisha:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Odisha .info h1{
+    margin: 0;
+}
+
+.Odisha .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Puducherry{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Puducherry:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Puducherry:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Puducherry:hover:before{
+    opacity: 1;
+}
+
+.Puducherry img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Puducherry .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Puducherry:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Puducherry .info h1{
+    margin: 0;
+}
+
+.Puducherry .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Punjab{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Punjab:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Punjab:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Punjab:hover:before{
+    opacity: 1;
+}
+
+.Punjab img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Punjab .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Punjab:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Punjab .info h1{
+    margin: 0;
+}
+
+.Punjab .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Rajasthan{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Rajasthan:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Rajasthan:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Rajasthan:hover:before{
+    opacity: 1;
+}
+
+.Rajasthan img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Rajasthan .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Rajasthan:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Rajasthan .info h1{
+    margin: 0;
+}
+
+.Rajasthan .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+
+.Sikkim{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Sikkim:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Sikkim:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Sikkim:hover:before{
+    opacity: 1;
+}
+
+.Sikkim img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Sikkim .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Sikkim:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Sikkim .info h1{
+    margin: 0;
+}
+
+.Sikkim .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Tamil_Nadu{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Tamil_Nadu:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Tamil_Nadu:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Tamil_Nadu:hover:before{
+    opacity: 1;
+}
+
+.Tamil_Nadu img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Tamil_Nadu .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Tamil_Nadu:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Tamil_Nadu .info h1{
+    margin: 0;
+}
+
+.Tamil_Nadu .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Telengana{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Telengana:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+.Telengana:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Telengana:hover:before{
+    opacity: 1;
+}
+
+.Telengana img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Telengana .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Telengana:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Telengana .info h1{
+    margin: 0;
+}
+
+.Telengana .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Uttar_Pradesh{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Uttar_Pradesh:hover {
+    /* transform: scale(1.1); */
+    transform: translateY(20px);
+    box-shadow: 6px 6px 30px skyblue;
+}
+
+.Uttar_Pradesh:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.Uttar_Pradesh:hover:before{
+    opacity: 1;
+}
+
+.Uttar_Pradesh img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Uttar_Pradesh .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    /* display: flex; */
+    top: 150px;
+    /* right: 20px; */
+    left: 10px;
+}
+
+.Uttar_Pradesh:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.Uttar_Pradesh .info h1{
+    margin: 0;
+}
+
+.Uttar_Pradesh .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
